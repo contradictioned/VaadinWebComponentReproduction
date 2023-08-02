@@ -30,6 +30,9 @@ Uncaught TypeError: window.Vaadin.Flow is undefined
 We now copy the MainView to a MyWebComponent-class and use the latter for exporting as WebComponent.
 After defensive `gradle vaadinClean` and `gradle bootRun`, still, http://localhost:8080/web-component/my-web-component.js works and  http://localhost:8080 does not.
 
+When starting a webserver, e.g. using `python3 -m http.server` and visiting http://localhost:8000/ we confirm, that the web-component export of our app actually works (and has a red textfield).
+
+
 
 # Vaadin Gradle Skeleton Starter Spring Boot
 
