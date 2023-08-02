@@ -1,3 +1,13 @@
+# Testing WebComponents and @CssImport
+
+In our app, it seems, these two features don't play along. Here is a fresh Vaadin Starter to test it.
+
+## Case 1: Only @CssImport
+
+The provided `vaadin-text-field-styles.css` got an easy to spot red background-color.
+When running the app, it is there as intended.
+
+
 # Vaadin Gradle Skeleton Starter Spring Boot
 
 This project demos the possibility of having Vaadin project in npm+webpack mode using Gradle.
