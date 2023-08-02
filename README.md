@@ -7,6 +7,24 @@ In our app, it seems, these two features don't play along. Here is a fresh Vaadi
 The provided `vaadin-text-field-styles.css` got an easy to spot red background-color.
 When running the app, it is there as intended.
 
+# Case 2: WebComponentExporter plus @CssImport
+
+Added `MyWebComponentExporter` and did `gradle vaadinClean` and `gradle bootRun`.
+Now http://localhost:8080/web-component/my-web-component.js returns a fitting javascript.
+Navigating to http://localhost:8080 yields a blank page and the following error in Chrome's browser console:
+
+```
+generated-flow-imports-fde68668.js:2284 Uncaught TypeError: Cannot set properties of undefined (setting 'button')
+    at generated-flow-imports-fde68668.js:2284:400
+```
+
+Or to add confusion, in Firefox' browser console:
+
+```
+Uncaught TypeError: window.Vaadin.Flow is undefined
+    <anonymous> http://localhost:8080/VAADIN/build/generated-flow-imports-fde68668.js:2284
+```
+
 
 # Vaadin Gradle Skeleton Starter Spring Boot
 
