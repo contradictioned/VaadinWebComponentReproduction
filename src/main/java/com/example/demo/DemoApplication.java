@@ -34,7 +34,8 @@ class DemoConfiguration {
         config.addAllowedMethod("DELETE");
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", config);
-        return new FilterRegistrationBean(new CorsFilter(source));
+        source.registerCorsConfiguration("/", config);
+        source.registerCorsConfiguration("/web-component/**", config);
+        return new FilterRegistrationBean<>(new CorsFilter(source));
     }
 }

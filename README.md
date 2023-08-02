@@ -32,6 +32,10 @@ After defensive `gradle vaadinClean` and `gradle bootRun`, still, http://localho
 
 When starting a webserver, e.g. using `python3 -m http.server` and visiting http://localhost:8000/ we confirm, that the web-component export of our app actually works (and has a red textfield).
 
+# Case 4: Using Vaadin 23.3.16 instead
+
+As our app is bound to the older Vaadin version due to other dependencies, let's test with Vaadin 23.
+Here, everything works: http://localhost:8080/ shows the layout (with red text field) and http://localhost:8000/ shows the embedded variant (also with red text field).
 
 
 # Vaadin Gradle Skeleton Starter Spring Boot
