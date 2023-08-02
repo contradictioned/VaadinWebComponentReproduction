@@ -25,6 +25,11 @@ Uncaught TypeError: window.Vaadin.Flow is undefined
     <anonymous> http://localhost:8080/VAADIN/build/generated-flow-imports-fde68668.js:2284
 ```
 
+# Case 3: Separating WebComponent Layout and "regular" Layout
+
+We now copy the MainView to a MyWebComponent-class and use the latter for exporting as WebComponent.
+After defensive `gradle vaadinClean` and `gradle bootRun`, still, http://localhost:8080/web-component/my-web-component.js works and  http://localhost:8080 does not.
+
 
 # Vaadin Gradle Skeleton Starter Spring Boot
 

@@ -5,13 +5,13 @@ import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.webcomponent.WebComponent;
 
 @Push
-public class MyWebComponentExporter extends WebComponentExporter<MainView> {
+public class MyWebComponentExporter extends WebComponentExporter<MyWebComponent> {
 
     public MyWebComponentExporter() {
         super("my-web-component");
     }
     @Override
-    protected void configureInstance(WebComponent<MainView> webComponent, MainView component) {
+    protected void configureInstance(WebComponent<MyWebComponent> webComponent, MyWebComponent component) {
 
     }
 }
